@@ -7,25 +7,23 @@
     <script src="fanyi.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
-<body>
-<span style="margin-left: 100px;">
-				<textarea style="height: 200px; width: 300px;" id="from" onkeyup="fanyi()">
+<body style="background-color: antiquewhite;margin-top: 100px">
+	<div style="margin-left: 100px;color: red;margin-bottom: 10px">自动检测翻译</div>
+	<span style="margin-left: 100px">
+		<textarea style="height: 200px; width: 300px;" id="from" onkeyup="fanyi()" placeholder="请输入...."></textarea>
 
-				</textarea>
 
+		<span style="color: cornflowerblue">任意语言</span>
+	</span>
 
-			<span>英语</span>
-		</span>
-<span style="margin-left: 100px;">自动翻译</span>
-<span style="margin-left: 100px;">
+	<span style="margin-left: 150px;">
 
-				<textarea id="to" style="height: 200px; width: 300px;" id="to">
-
-				</textarea>
-				<span>中文</span>
+		<textarea id="to" style="height: 200px; width: 300px;" id="to" ></textarea>
+				<span style="color: rebeccapurple">英文</span>
 
 		</span>
-
-		<button onclick="fanyi()">翻译</button>
+<br>
+<br>
+<button onclick="fanyi()" style="width: 80px;margin-left: 100px;">翻译</button>
 </body>
 </html>
