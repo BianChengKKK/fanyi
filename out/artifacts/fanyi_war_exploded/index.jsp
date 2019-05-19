@@ -9,7 +9,7 @@
 </head>
 <body>
 <span style="margin-left: 100px;">
-				<textarea style="height: 200px; width: 300px;" id="from" >
+				<textarea style="height: 200px; width: 300px;" id="from" onkeyup="fanyi()">
 
 				</textarea>
 

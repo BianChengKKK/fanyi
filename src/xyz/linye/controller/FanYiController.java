@@ -18,12 +18,16 @@ public class FanYiController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String fromValue = request.getParameter("fromValue");
 
+        //get请求转码
         String newData = new String(fromValue.getBytes("iso-8859-1"),"utf-8");
 
+        //调用翻译api
         TransApi api = new TransApi(APP_ID, SECURITY_KEY);
 
+        //任意语言翻译成英语
         String transResult = api.getTransResult(newData, "auto", "en");
 
+        //返回前端
         response.getWriter().write(transResult);
 
     }
